@@ -1,7 +1,8 @@
-﻿using MvvmCross.Core.Navigation;
+﻿using Mobile.Core.ViewModels;
+using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
 
-namespace Mobile.Core.ViewModels
+namespace Candidate.Core.ViewModels
 {
     public class LoginViewModel : MvxViewModel
     {
@@ -36,7 +37,7 @@ namespace Mobile.Core.ViewModels
             _navigationService = navigationService;
         }
 
-        public Login()
+        public void Login()
         {
             if (_username == _actualUsername && _password == _actualPassword)
             {
