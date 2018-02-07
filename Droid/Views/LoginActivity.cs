@@ -8,9 +8,9 @@ namespace Candidate.Droid.Views
     [Activity(Label = "Candidate", MainLauncher = true, Icon = "@mipmap/icon")]
     public class LoginActivity : MvxActivity<LoginViewModel>
     {
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle bundle)
         {
-            base.OnViewModelSet();
+            base.OnCreate(bundle);
             SetContentView(Resource.Layout.Login);
         }
     }
