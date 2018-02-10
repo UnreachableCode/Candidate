@@ -32,6 +32,8 @@ namespace Candidate.Core.ViewModels
             set { SetProperty(ref _wrongLogin, value); }
         }
 
+        public IMvxCommand OrderClickCommand => new MvxCommand(Login);
+
         public LoginViewModel(IMvxNavigationService navigationService)
         {
             _navigationService = navigationService;
