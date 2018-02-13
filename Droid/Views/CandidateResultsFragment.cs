@@ -1,10 +1,14 @@
-﻿using System;
+﻿using Android.Runtime;
+using Candidate.Core.ViewModels;
+using MvvmCross.Droid.Shared.Attributes;
+using MvvmCross.Droid.Support.V4;
+
 namespace Candidate.Droid.Views
 {
-    public class CandidateResultsFragment
+    [MvxFragment(typeof(MainResultsViewModel), Resource.Id.content_frame, true)]
+    [Register("Candidate.Droid.Views.CandidateResultsFragment")]
+    public class CandidateResultsFragment : BaseFragment<CandidateResultsViewModel>
     {
-        public CandidateResultsFragment()
-        {
-        }
+        protected override int FragmentId => Resource.Layout.CandidateResultsFragment;
     }
 }

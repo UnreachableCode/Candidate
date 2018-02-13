@@ -1,10 +1,14 @@
-﻿using System;
-namespace Candidate.ViewModels
+﻿using MvvmCross.Core.ViewModels;
+
+namespace Candidate.Core.ViewModels
 {
-    public class CandidateResultsViewModel
+    public class CandidateResultsViewModel : MvxViewModel
     {
-        public CandidateResultsViewModel()
+        string _username = "Charlie";
+        public string Username
         {
+            get { return _username; }
+            set { SetProperty(ref _username, value); }
         }
     }
 }

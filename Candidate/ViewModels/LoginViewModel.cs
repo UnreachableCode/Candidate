@@ -11,14 +11,14 @@ namespace Candidate.Core.ViewModels
         string _actualUsername = "charlie@me.com";
         string _actualPassword = "RubbishPassword";
 
-        string _username;
+        string _username = "charlie@me.com"; //todo remove for demo.
         public string Username
         {
             get { return _username; }
             set { SetProperty(ref _username, value); }
         }
 
-        string _password;
+        string _password = "RubbishPassword"; //todo remove for demo.
         public string Password
         {
             get { return _password; }

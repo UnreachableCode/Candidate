@@ -1,7 +1,8 @@
-﻿using System;
-namespace Candidate.ViewModels
+﻿using MvvmCross.Core.ViewModels;
+
+namespace Candidate.Core.ViewModels
 {
-    public class MainResultsViewModel
+    public class MainResultsViewModel : MvxViewModel
     {
         public MainResultsViewModel()
         {
